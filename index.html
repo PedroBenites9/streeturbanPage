@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto JS</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#productos">Productos</a>
+            <a href="#formulario">Contacto</a>
+        </nav>
+    </header>
+    <main class="home" id="home">
+        <section class="home__img">
+            <h1 id="home__title">StreetUrban</h1>
+            <div id="home__presentation">
+                <div id="home__presentation-text">
+                    <h2>Moda urbana</h2>
+                    <p>
+                        ¡Dale vida a tu estilo! Descubre prendas con diseños innovadores y la comodidad que
+                        necesitas para moverte por la ciudad. Exprésate con libertad y marca tendencia con cada paso.
+                        ¡Encuentra tu look ideal!
+                    </p>
+                    <a href="#productos"><button class="button__home">Explorar<span>Urbano</span></button></a>
+                </div>
+                <img src="./assets/img/remeraazulresize.gif" alt="" srcset="" id="img__remera">
+            </div>
+        </section>
+
+        <section id="tendencia">
+            <h3 class="title">Tendencias</h3>
+            <div id="tendencia__container">
+                <div class="tendencia__card" id="first">
+                    <img src="assets/img_card/free-photo-of-blanco-y-negro-moda-mujer-modelo.jpeg" alt="">
+                    <p>La moda es el arte de expresar tu esencia sin decir una palabra</p>
+                </div>
+                <div class="tendencia__card" id="second">
+                    <p>La ciudad es tu pasarela, la moda urbana tu mejor outfit</p>
+                    <img src="assets/img_card/free-photo-of-hombre-en-pie-de-pie-retrato.jpeg" alt="">
+                </div>
+                <div class="tendencia__card" id="third">
+                    <img src="assets/img_card/free-photo-of-mujer-reloj-de-pulsera-retrato-pelo-largo.jpeg" alt="">
+                    <p>Más que ropa, la moda es una actitud ante la vida</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h3 class="title">Productos</h3>
+            <div id="grid__template">
+                <div class="contenedor__card">
+                    <div class="card">
+                        <img src="./assets/img_card/ropa_colorSalmon.jpeg" alt="imagenCard" />
+                        <p class="card__title">Camisa de algodón salmon</p>
+                        <button class="button-buy">comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img_card/ropa_colorVerdetenue.webp" alt="imagenCard" />
+                        <p class="card__title">Camison musgo</p>
+                        <button class="button-buy">comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img_card/ropa_negra.webp" alt="imagenCard" />
+                        <p class="card__title">Musculosa negra</p>
+                        <button class="button-buy">comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img_card/ropa_urban.webp" alt="imagenCard" />
+                        <p class="card__title">Campera urban</p>
+                        <button class="button-buy">comprar</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="title">Exprésate con libertad!</h2>
+                    <div id="container__photos">
+                        <aside class="img__producto">
+                            <img src="assets/img/pexels-photo-29209493.webp" alt="" class="img_womanStreet">
+                        </aside>
+                        <aside class="img__producto">
+                            <img src="assets/img/urbanimgwoman.jpg" alt="" class="img_womanStreet">
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="multimedia">
+            <div id="multimedia__contenedor">
+                <iframe width="100%" height="420px"
+                    src="https://www.youtube.com/embed/QKUk4ltIjMo?si=wflwC55fBXv8ULqk&controls=0&autoplay=1&mute=1&loop=1&playlist=QKUk4ltIjMo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clip ~~~~board-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="multimedia__text">
+                    <h2 class="title">
+                        Tu estilo, tu ritmo
+                    </h2>
+                    <p>
+                        Muévete con libertad y estilo. Esta prenda te brinda la comodidad que necesitas para explorar la
+                        ciudad sin límites
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="review">
+            <h1 class="title">Reseñas</h1>
+            <div id="contenedor__review">
+                <div class="card__review">
+                    <img src="assets/img_review/23.jpg" alt="user1" class="img__review">
+                    <div class="card__container">
+                        <div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlElEQVR4nMVTzytEURR+GKxshawY75z3trMVJTEbdraiKBa2w98xZeFfmH/A0o+od45nIUopydbP8jvRp3vvaxoGbzDl1Kn77ved75z7vXs97z8CR9lWk/UTFH8eQnP1EYtzzVA+gdApDsKWOkzHs1CGTeGZv08nfAzhsySPzd7vBZWmk8kWIbzk1jSVXrg2mEGc7YX4eQgtQLkI5VUoXUHpAlvUZtOs7Z7BuGi54udt7dpgpnKSMQg/lb1yk1xDOTYefvAzTrAKLj8ZjfdTmk7KDxB6htJ4DXaMOy4/mNrPSRIMQOgWQneI/KEvxWK/H8o3ELqHBsPfdzaijnyHiHNVeMQ5i1lOMJB2kqQoKDh/qrubPYtFQaEmMRMQWnZmhx32OwpDkw4LO5KftuzVGlDasFckynZDeAXKLxB+hXIJ2tcD4XMIrf9E8DLx6dEdnTZd2mvy6DC6rE1sl7oq7uI+hCY++LdTxmPuTBcUGoXwISKeBLzGKhxeg30IynuIeCRdcLunHSWvKZVX8poMN1Xwr/EGLa5cD/0jwJQAAAAASUVORK5CYII="
+                                alt="star--v1">
+                        </div>
+                        <h3>Eduardo</h3>
+                        <h4>"Calidad que se siente" </h4>
+                        <p>"La prenda no solo tiene un diseño increíble, sino que la calidad de la tela es excepcional.
+                            Se nota la atención al detalle en las costuras y el acabado. ¡Una inversión que vale la
+                            pena!"</p>
+                    </div>
+                </div>
+                <div class="card__review">
+                    <img src="assets/img_review/47.jpg" alt="user1" class="img__review">
+                    <div class="card__container">
+                        <div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+
+
+                        </div>
+                        <h3>Gonzalo</h3>
+                        <h4>"Comodidad y estilo en una sola prenda" </h4>
+                        <p>"La prenda no solo tiene un diseño increíble, sino que la calidad de la tela es excepcional.
+                            Se nota la atención al detalle en las costuras y el acabado. ¡Una inversión que vale la
+                            pena!"</p>
+                    </div>
+                </div>
+                <div class="card__review">
+                    <img src="assets/img_review/61.jpg" alt="user1" class="img__review">
+                    <div class="card__container">
+                        <div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlElEQVR4nMVTzytEURR+GKxshawY75z3trMVJTEbdraiKBa2w98xZeFfmH/A0o+od45nIUopydbP8jvRp3vvaxoGbzDl1Kn77ved75z7vXs97z8CR9lWk/UTFH8eQnP1EYtzzVA+gdApDsKWOkzHs1CGTeGZv08nfAzhsySPzd7vBZWmk8kWIbzk1jSVXrg2mEGc7YX4eQgtQLkI5VUoXUHpAlvUZtOs7Z7BuGi54udt7dpgpnKSMQg/lb1yk1xDOTYefvAzTrAKLj8ZjfdTmk7KDxB6htJ4DXaMOy4/mNrPSRIMQOgWQneI/KEvxWK/H8o3ELqHBsPfdzaijnyHiHNVeMQ5i1lOMJB2kqQoKDh/qrubPYtFQaEmMRMQWnZmhx32OwpDkw4LO5KftuzVGlDasFckynZDeAXKLxB+hXIJ2tcD4XMIrf9E8DLx6dEdnTZd2mvy6DC6rE1sl7oq7uI+hCY++LdTxmPuTBcUGoXwISKeBLzGKhxeg30IynuIeCRdcLunHSWvKZVX8poMN1Xwr/EGLa5cD/0jwJQAAAAASUVORK5CYII="
+                                alt="star--v1">
+                        </div>
+                        <h3>Lucia</h3>
+                        <h4>"Un diseño que enamora" </h4>
+                        <p> "Esta prenda es ideal para cualquier ocasión. La he usado para ir a una boda, para una cena
+                            informal e incluso para un día de compras. ¡Siempre me siento bien con ella!"</p>
+                    </div>
+                </div>
+                <div class="card__review">
+                    <img src="assets/img_review/78.jpg " alt="user1" class="img__review">
+                    <div class="card__container">
+                        <div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nMXUTU8TQRzH8fWByD51293ug+FVaMI78GYIkTveuECN74B4gKO+B66ePRikln1oobW0yxbjwYSExKPxYOzFOPM1m/pQULqNJfGfzG3mM//fzGQU5X8UKNfycXXgib9F5m9dDda9rZF5H8m8T5y4xuxg5j/i2IPUg75bmw1DuU7qvSd1cwyOnFOeKzf+HUzdlV9Yr5qD0LUfFC9855gMgkXeestkfo3U3abv7dB3z0ZQFboOvLGhbZ/RruyIA2ubVrlGUl6mWVokcczf4CBYZxBA5jM6r4td/cA6FWhXkIdl5IGFbFnIZgmZmBAZ6+e7PPYek3pyEjaCymNQCRGZUoT6k79HP3JX6VW/novYyWNegsXmNyJjbfJ59ux7dO3PRRFFbHwhNO9Pd7sdZ+OyiDI2kZEBob4xFZYX7fKzSZgMdURDe6pMW+LQSi5GHMdkQ0fUtXgqjIZyUzRLw/GuRKRHItQjuZ9jGvK1hqirw3yuUgi2rLtjT+IDsfbw59fFvrok6uqprKvIvXl4NXenGEysNREbQyJjk5ai/rmhorI7vyl2bw15OTf5yYwiawEtdaFw3p66wAstKARnre/vN7GvG6GLnQAAAABJRU5ErkJggg=="
+                                alt="star--v1">
+
+                        </div>
+                        <h3>Micaela</h3>
+                        <h4>"La mejor compra que he hecho" </h4>
+                        <p>"Sin duda, esta es la mejor compra de ropa que he hecho en mucho tiempo. La prenda es de
+                            excelente calidad, tiene un diseño que me encanta y me queda perfecta. ¡La recomiendo al
+                            100%!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="formulario">
+            <h2>Consultas o dudas?</h2>
+            <p>No dudes en dejar tu comentario, suscribite a nuestra noticia semanal de moda y outfits para vos!</p>
+            <form action="https://formspree.io/f/xldenlwb" method="post" enctype="multipart/form-data"
+                id="formulario__contenedor">
+                <fieldset class="formulario">
+                    <p>
+                        <label class="form__label" for="name">Ingrese su nombre:</label>
+                        <input class="input input__text" type="text" required minlength="2" maxlength="15"
+                            placeholder="Nombre" name="name">
+                    </p>
+                    <br />
+                    <p>
+                        <label class="form__label" for="surname">Ingrese su Apellido:</label>
+                        <input class="input input__text" type="text" name="surname" required placeholder="Apellido">
+                    </p>
+                    <br />
+                    <p>
+                        <label class="form__label" for="email">Ingrese su correo:</label>
+                        <input class="input input__text" type="text" required placeholder="Correo" name="email">
+                    </p>
+                    <br />
+                    <p>Que ves lo primero al comprar una indumentaria?
+                        <select class="input" name="usequestion" id="question" name="select">
+                            <option value="Empty" selected></option>
+                            <option value="La tela">La tela</option>
+                            <option value="El estampado">El estampado</option>
+                            <option value="El color">El color</option>
+                            <option value="La marca">La marca</option>
+                        </select>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="caja_texto">Desea agregar alguna consulta? (opcional)</label>
+                        <textarea name="textarea" id="" maxlength="500" rows="6" cols="60"></textarea>
+                    <p>
+                    </p>
+                    <label for="suscripcion"> <input type="checkbox" name="checkbox" id="" value="isCheck">
+                    </label>Si, estoy de acuerdo en suscribirme a las noticias semanal de moda
+                    </p>
+                    <br />
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__contenedor">
+            <div class="footer__links">
+                <h3>Visitanos en nuestras redes sociales!</h3>
+                <div class="footer__links-redes">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="auto"
+                            viewBox="0 0 48 48">
+                            <linearGradient id="awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1" x1="6.228" x2="42.077"
+                                y1="4.896" y2="43.432" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#0d61a9"></stop>
+                                <stop offset="1" stop-color="#16528c"></stop>
+                            </linearGradient>
+                            <path fill="url(#awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1)"
+                                d="M42,40c0,1.105-0.895,2-2,2H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32	c1.105,0,2,0.895,2,2V40z">
+                            </path>
+                            <path
+                                d="M25,38V27h-4v-6h4v-2.138c0-5.042,2.666-7.818,7.505-7.818c1.995,0,3.077,0.14,3.598,0.208	l0.858,0.111L37,12.224L37,17h-3.635C32.237,17,32,18.378,32,19.535V21h4.723l-0.928,6H32v11H25z"
+                                opacity=".05"></path>
+                            <path
+                                d="M25.5,37.5v-11h-4v-5h4v-2.638c0-4.788,2.422-7.318,7.005-7.318c1.971,0,3.03,0.138,3.54,0.204	l0.436,0.057l0.02,0.442V16.5h-3.135c-1.623,0-1.865,1.901-1.865,3.035V21.5h4.64l-0.773,5H31.5v11H25.5z"
+                                opacity=".07"></path>
+                            <path fill="#fff"
+                                d="M33.365,16H36v-3.754c-0.492-0.064-1.531-0.203-3.495-0.203c-4.101,0-6.505,2.08-6.505,6.819V22h-4v4	h4v11h5V26h3.938l0.618-4H31v-2.465C31,17.661,31.612,16,33.365,16z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="auto"
+                            viewBox="0 0 48 48">
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035"
+                                r="44.899" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#fd5"></stop>
+                                <stop offset=".328" stop-color="#ff543f"></stop>
+                                <stop offset=".348" stop-color="#fc5245"></stop>
+                                <stop offset=".504" stop-color="#e64771"></stop>
+                                <stop offset=".643" stop-color="#d53e91"></stop>
+                                <stop offset=".761" stop-color="#cc39a4"></stop>
+                                <stop offset=".841" stop-color="#c837ab"></stop>
+                            </radialGradient>
+                            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                            </path>
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54"
+                                r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#4168c9"></stop>
+                                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                            </path>
+                            <path fill="#fff"
+                                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                            </path>
+                            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                            <path fill="#fff"
+                                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                            </path>
+                        </svg></div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="auto"
+                            viewBox="0 0 48 48">
+                            <path fill="#fff"
+                                d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                            </path>
+                            <path fill="#fff"
+                                d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                            </path>
+                            <path fill="#cfd8dc"
+                                d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                            </path>
+                            <path fill="#40c351"
+                                d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                            </path>
+                            <path fill="#fff" fill-rule="evenodd"
+                                d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text">
+                <p>
+                    "Copyright © 2023 AI Text Converter. All rights reserved.
+                    The content generated by this AI text generator, including all text, graphics, logos, and images, is
+                    protected by copyright and other intellectual property laws. The content may not be copied,
+                    reproduced,
+                    transmitted, distributed, or modified, in whole or in part, without the prior written permission of
+
+                </p>
+            </div>
+            <div class="footer_maps">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5524.63253162536!2d-58.40718447631254!3d-34.57972287039182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5656fad7395%3A0x64e3aba3d5290da6!2sAlcorta%20Shopping!5e0!3m2!1ses!2sar!4v1729120381501!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
