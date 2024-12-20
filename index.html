@@ -11,12 +11,23 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#productos">Productos</a>
-            <a href="#formulario">Contacto</a>
-        </nav>
+    <header class="d-flex justify-content-around align-items-center">
+        <ul class="nav justify-content-center p-4   ">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#formulario">Contacto</a>
+            </li>
+        </ul>
+        <div class="carrito">
+            <a href="">
+                <i class="fa-solid fa-cart-shopping fa-xl" id="carrito"></i>
+            </a>
+        </div>
     </header>
     <main class="home" id="home">
         <section class="home__img">
@@ -35,62 +46,23 @@
             </div>
         </section>
 
-        <section id="tendencia">
-            <h3 class="title">Tendencias</h3>
-            <div id="tendencia__container">
-                <div class="tendencia__card" id="first">
-                    <img src="assets/img_card/free-photo-of-blanco-y-negro-moda-mujer-modelo.jpeg" alt="">
-                    <p>La moda es el arte de expresar tu esencia sin decir una palabra</p>
-                </div>
-                <div class="tendencia__card" id="second">
-                    <p>La ciudad es tu pasarela, la moda urbana tu mejor outfit</p>
-                    <img src="assets/img_card/free-photo-of-hombre-en-pie-de-pie-retrato.jpeg" alt="">
-                </div>
-                <div class="tendencia__card" id="third">
-                    <img src="assets/img_card/free-photo-of-mujer-reloj-de-pulsera-retrato-pelo-largo.jpeg" alt="">
-                    <p>Más que ropa, la moda es una actitud ante la vida</p>
+        <section id="productos" class="mb-5">
+            <div class="container">
+                <h2 class="title">Exprésate con libertad!</h2>
+                <div id="container__photos">
+                    <aside class="img__producto">
+                        <img src="assets/img/pexels-photo-29209493.webp" alt="" class="img_womanStreet">
+                    </aside>
+                    <aside class="img__producto">
+                        <img src="assets/img/urbanimgwoman.jpg" alt="" class="img_womanStreet">
+                    </aside>
                 </div>
             </div>
-        </section>
-
-        <section id="productos">
             <h3 class="title">Productos</h3>
-            <div id="grid__template">
-                <div class="contenedor__card">
-                    <div id="card">
+            <div class="contenedor__card">
 
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img_card/ropa_colorSalmon.jpeg" alt="imagenCard" />
-                        <p class="card__title">Camisa de algodón salmon</p>
-                        <button class="button-buy">comprar</button>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img_card/ropa_colorVerdetenue.webp" alt="imagenCard" />
-                        <p class="card__title">Camison musgo</p>
-                        <button class="button-buy">comprar</button>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img_card/ropa_negra.webp" alt="imagenCard" />
-                        <p class="card__title">Musculosa negra</p>
-                        <button class="button-buy">comprar</button>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img_card/ropa_urban.webp" alt="imagenCard" />
-                        <p class="card__title">Campera urban</p>
-                        <button class="button-buy">comprar</button>
-                    </div>
-                </div>
-                <div class="container">
-                    <h2 class="title">Exprésate con libertad!</h2>
-                    <div id="container__photos">
-                        <aside class="img__producto">
-                            <img src="assets/img/pexels-photo-29209493.webp" alt="" class="img_womanStreet">
-                        </aside>
-                        <aside class="img__producto">
-                            <img src="assets/img/urbanimgwoman.jpg" alt="" class="img_womanStreet">
-                        </aside>
-                    </div>
+                <div id="lista-producto" class="row justify-content-center row-cols-2 row-cols-sm-4 gap-5 cards">
+                    <!-- cards -->
                 </div>
             </div>
         </section>
@@ -353,6 +325,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/f968d5b47d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

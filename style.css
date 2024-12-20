@@ -24,7 +24,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #1E3050 !important;
     padding: 10px;
 }
 
@@ -230,14 +230,7 @@ nav {
     height: 400px;
 }
 
-#grid__template {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 100px;
-    max-width: 1700px;
-    height: auto;
-    justify-self: center;
-}
+
 
 .container>h2 {
     margin-top: 100px;
