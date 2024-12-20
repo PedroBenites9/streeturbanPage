@@ -5,7 +5,7 @@
         "price": 69,
         "description": "Stay cozy and stylish with our Classic Heather Gray Hoodie. Crafted from soft, durable fabric, it features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs. Perfect for a casual day out or a relaxing evening in, this hoodie is a versatile addition to any wardrobe.",
         "images": [
-            "https://i.imgur.com/cHddUCu.jpeg",
+            "https://i.imgur.com/zW0kvGb.jpg",
             "https://i.imgur.com/CFOjAgK.jpeg",
             "https://i.imgur.com/wbIMMme.jpeg"
         ],
@@ -25,7 +25,7 @@
         "price": 90,
         "description": "Elevate your casual wear with our Classic Grey Hooded Sweatshirt. Made from a soft cotton blend, this hoodie features a front kangaroo pocket, an adjustable drawstring hood, and ribbed cuffs for a snug fit. Perfect for those chilly evenings or lazy weekends, it pairs effortlessly with your favorite jeans or joggers.",
         "images": [
-            "https://i.imgur.com/R2PN9Wq.jpeg",
+            "https://imgur.com/0KcVy8y",
             "https://i.imgur.com/IvxMPFr.jpeg",
             "https://i.imgur.com/7eW9nXP.jpeg"
         ],
@@ -65,7 +65,7 @@
         "price": 25,
         "description": "Discover the perfect blend of style and comfort with our Classic Comfort Fit Joggers. These versatile black joggers feature a soft elastic waistband with an adjustable drawstring, two side pockets, and ribbed ankle cuffs for a secure fit. Made from a lightweight and durable fabric, they are ideal for both active days and relaxed lounging.",
         "images": [
-            "https://i.imgur.com/ZKGofuB.jpeg",
+            "https://imgur.com/a/OQiyNG5",
             "https://i.imgur.com/GJi73H0.jpeg",
             "https://i.imgur.com/633Fqrz.jpeg"
         ],
@@ -104,7 +104,7 @@
         "price": 98,
         "description": "Experience ultimate comfort with our red jogger sweatpants, perfect for both workout sessions and lounging around the house. Made with soft, durable fabric, these joggers feature a snug waistband, adjustable drawstring, and practical side pockets for functionality. Their tapered design and elastic cuffs offer a modern fit that keeps you looking stylish on the go.",
         "images": [
-            "https://i.imgur.com/9LFjwpI.jpeg",
+            "https://imgur.com/wLWyLuP",
             "https://i.imgur.com/vzrTgUR.jpeg",
             "https://i.imgur.com/p5NdI6n.jpeg"
         ],
@@ -563,9 +563,9 @@
         "price": 10,
         "description": "API DOC",
         "images": [
-            "[\"https://i.imgur.com/QkIa5tT.jpeg\"",
-            "\"https://i.imgur.com/QkIa5tT.jpeg\"",
-            "\"https://i.imgur.com/QkIa5tT.jpeg\"]"
+            "https://i.imgur.com/QkIa5tT.jpeg",
+            "https://i.imgur.com/QkIa5tT.jpeg",
+            "https://i.imgur.com/QkIa5tT.jpeg"
         ],
         "creationAt": "2024-12-14T23:12:32.000Z",
         "updatedAt": "2024-12-14T23:12:32.000Z",

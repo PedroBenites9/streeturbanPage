@@ -23,10 +23,24 @@
                 <a class="nav-link text-dark" href="#formulario">Contacto</a>
             </li>
         </ul>
-        <div class="carrito">
-            <a href="">
-                <i class="fa-solid fa-cart-shopping fa-xl" id="carrito"></i>
-            </a>
+        <div class="dropdown carrito ">
+            <i class="fa-solid fa-cart-shopping fa-xl" id="carrito" data-bs-toggle="dropdown"></i>
+            <div class="carrito dropdown-menu">
+                <table id="lista-carrito" class="contenedor__carrito">
+                    <thead class="dropdown-item">
+                        <tr class="">
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="d-flex flex-column contenedor__tbody"></tbody>
+                </table>
+                <a href=" #" id="vaciar-carrito" class=" dropdown-item btn btn-primary">Vaciar Carrito</a>
+            </div>
+
         </div>
     </header>
     <main class="home" id="home">
@@ -61,7 +75,7 @@
             <h3 class="title">Productos</h3>
             <div class="contenedor__card">
 
-                <div id="lista-producto" class="row justify-content-center row-cols-2 row-cols-sm-4 gap-5 cards">
+                <div id="lista-productos" class="row justify-content-center row-cols-2 row-cols-sm-4 gap-5 cards">
                     <!-- cards -->
                 </div>
             </div>

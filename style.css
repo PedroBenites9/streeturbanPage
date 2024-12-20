@@ -53,6 +53,42 @@ nav {
     gap: 0 50px;
 }
 
+/* carrito */
+.carrito {
+    right: 200px;
+}
+
+.img__carrito {
+    width: 250px !important;
+    height: auto;
+}
+
+.contenedor__carrito {
+    width: 500px;
+}
+
+.contenedor__carrito th {
+    width: 100%;
+    padding: 12px 15px;
+    text-align: left;
+
+}
+
+
+td {
+    padding: 10px 30px;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 100px;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
 .home {
     margin: auto 200px;
     background-color: #fff;
