@@ -12,6 +12,7 @@
 
 <body>
     <header class="d-flex justify-content-around align-items-center">
+
         <ul class="nav justify-content-center p-4   ">
             <li class="nav-item">
                 <a class="nav-link text-dark" href="#">Home</a>
@@ -23,12 +24,14 @@
                 <a class="nav-link text-dark" href="#formulario">Contacto</a>
             </li>
         </ul>
+
         <div class="dropdown carrito ">
             <i class="fa-solid fa-cart-shopping fa-xl" id="carrito" data-bs-toggle="dropdown"></i>
+            <div id="alerta"></div>
             <div class="carrito dropdown-menu">
-                <table id="lista-carrito" class="contenedor__carrito">
-                    <thead class="dropdown-item">
-                        <tr class="">
+                <table id="lista-carrito" class="dropdown-item  contenedor__carrito">
+                    <thead>
+                        <tr>
                             <th>Imagen</th>
                             <th>Nombre</th>
                             <th>Precio</th>
@@ -38,7 +41,12 @@
                     </thead>
                     <tbody class="d-flex flex-column contenedor__tbody"></tbody>
                 </table>
-                <a href=" #" id="vaciar-carrito" class=" dropdown-item btn btn-primary">Vaciar Carrito</a>
+                <div class="dropdown-item d-flex justify-content-evenly">
+                    <a href=" #" id="vaciar-carrito" class="dropdown-item btn btn-primary text-danger">Vaciar
+                        Carrito</a>
+                    <a href=" #" id="iniciar-compra" class="dropdown-item btn text-info-emphasis" data-bs-toggle="modal"
+                        data-bs-target="#modal">Iniciar Compra</a>
+                </div>
             </div>
 
         </div>
@@ -72,7 +80,7 @@
                     </aside>
                 </div>
             </div>
-            <h3 class="title">Productos</h3>
+            <h3 id="productos" class="title">Productos</h3>
             <div class="contenedor__card">
 
                 <div id="lista-productos" class="row justify-content-center row-cols-2 row-cols-sm-4 gap-5 cards">

@@ -1,11 +1,15 @@
 let carritoArticulos = []
 
+// variables indexe.html
 const carrito = document.querySelector("#lista-carrito")
 const contenedorCarrito = document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito')
+const comprarProductoBtn = document.querySelector('#iniciar-compra')
 
 const listaProducto = document.querySelector('#lista-productos')
 const contenedorCard = document.querySelector('.cards')
+
+// variables checkout
 
 const API_URL = './assets/json/Productos_Indumentaria.json'
 
@@ -18,7 +22,6 @@ fetch(API_URL)
         json.forEach(clothes => {
             let div_card = document.createElement('div')
             const { images, title, price, id } = clothes
-            console.log(images[1])
             div_card.classList.add('card')
             div_card.innerHTML = ` 
             <div class='col'>
@@ -47,6 +50,8 @@ function cargarEventListeners() {
     carrito.addEventListener('click', eliminarProducto)
 
     vaciarCarritoBtn.addEventListener('click', vaciarCarrito)
+
+    comprarProductoBtn.addEventListener('click', comprarProducto)
 }
 
 function agregarCarrito(e) {
@@ -69,12 +74,9 @@ function eliminarProducto(e) {
 
 }
 
-function vaciarCarrito(e) {
-    e.preventDefault()
+function vaciarCarrito() {
     carritoArticulos = []
     carritoHTML()
-
-
 }
 
 
@@ -99,10 +101,11 @@ function leerDatosProducto(producto) {
             }
         })
         carritoArticulos = [...productos]
+        almarcenarLocalStorage(carritoArticulos)
     } else {
         //agregamos a carrito
         carritoArticulos = [...carritoArticulos, infoProducto]
-        console.log(carritoArticulos)
+        almarcenarLocalStorage(carritoArticulos)
     }
 
     // actualiza HMTL carrito
@@ -147,3 +150,39 @@ function limpiarHTML() {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild)
     }
 }
+
+function almarcenarLocalStorage(producto) {
+    localStorage.setItem('carrito', JSON.stringify(producto))
+}
+
+function alertaCarrito(message, type) {
+    const alerta = document.querySelector('#alerta')
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+        `
+            <div class='alert alert-${type} alert-dismissible position-fixed' role="alert">
+                <div>${message}</div>
+                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            `
+    ].join()
+    alerta.append(wrapper)
+}
+
+function alertaCarritoVacio() {
+    alertaCarrito('El Carrito se encuentra vacio, elige un producto', 'danger')
+}
+
+function comprarProducto() {
+    if (!carritoArticulos.length) {
+        alertaCarritoVacio()
+    } else {
+        window.location.href = './layout/carrito.html'
+        vaciarCarrito()
+        limpiarHTML()
+
+    }
+}
+
+// script checkout
+

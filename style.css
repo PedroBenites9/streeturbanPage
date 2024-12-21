@@ -54,6 +54,11 @@ nav {
 }
 
 /* carrito */
+#carrito {
+    height: auto;
+    width: 50px;
+}
+
 .carrito {
     right: 200px;
 }
