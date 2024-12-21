@@ -5,16 +5,21 @@ const contenedorCheckout = document.querySelector('#home')
 const contenedorProductos = document.querySelector('#contenedor__productos')
 const totalPrecio = document.querySelector('#totalPrecio')
 
+const comprarBtn = document.querySelector('#button-comprar')
+
 let totalProd = []
 let montoTotal = totalProd.reduce((acc, actual) => acc + actual, 0)
 cargarEventListeners();
 function cargarEventListeners(e) {
     // e.preventDefault()
-
+    comprarBtn.addEventListener('click', submitCompra)
 }
 
-function obtenerProductoLS(productos) {
-
+function submitCompra() {
+    carritoLS.map((e) => console.log(e))
+    localStorage.clear()
+    alert('Gracias por su compra!')
+    window.location.href = '../index.html'
 }
 
 carritoLS.map((producto) => {
@@ -25,7 +30,6 @@ carritoLS.map((producto) => {
 function mostrarProductos(idProducto, imagen, title, precio, cantidad) {
     let total = precio * cantidad
     totalProd.push(total)
-    console.log(totalProd)
     let divCheckout = document.createElement('div')
     divCheckout.classList.add('card__producto')
     divCheckout.innerHTML = `

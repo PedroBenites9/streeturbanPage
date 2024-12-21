@@ -73,7 +73,8 @@ function eliminarProducto(e) {
 
 }
 
-function vaciarCarrito() {
+function vaciarCarrito(e) {
+    e.preventDefault()
     carritoArticulos = []
     carritoHTML()
 }
@@ -115,7 +116,7 @@ function leerDatosProducto(producto) {
 
 
 
-function carritoHTML() {
+function carritoHTML(e) {
     // limpiar HTML
     limpiarHTML()
     // recorre el carrito y genera HTML
@@ -123,24 +124,25 @@ function carritoHTML() {
         const { imagen, title, precio, cantidad, idProducto } = producto
         const row = document.createElement('tr')
         row.innerHTML = `
-         <td>
-             <img src="${imagen}" class='img__carrito'/>    
-         </td>
-         <td>
-             ${title} 
-         </td>
-         <td>
-             ${precio}
-         </td>
-         <td>
-             ${cantidad}
-         </td>
-         <td>
-             <a href='#' class='borrar-curso' data-id="${idProducto}"> X </a>
-         </td>
+        <td>
+        <img src="${imagen}" class='img__carrito'/>    
+        </td>
+        <td>
+        ${title} 
+        </td>
+        <td>
+        ${precio}
+        </td>
+        <td>
+        ${cantidad}
+        </td>
+        <td>
+        <a href='#' class='borrar-curso' data-id="${idProducto}"> X </a>
+        </td>
          `
         // agregar HTML del carrito en el tbody
         contenedorCarrito.appendChild(row)
+        e.preventDefault()
     })
 }
 
