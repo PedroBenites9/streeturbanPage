@@ -124,25 +124,24 @@ function carritoHTML(e) {
         const { imagen, title, precio, cantidad, idProducto } = producto
         const row = document.createElement('tr')
         row.innerHTML = `
-        <td>
-        <img src="${imagen}" class='img__carrito'/>    
+        <td id='producto__imagen'>
+            <img src="${imagen}" class='img__carrito'/>    
+        </td>
+        <td id='producto__title'>
+            ${title} 
+        </td>
+        <td id='producto__precio'>
+            ${precio}
+        </td>
+        <td id='producto__cantidad'>
+            ${cantidad}
         </td>
         <td>
-        ${title} 
-        </td>
-        <td>
-        ${precio}
-        </td>
-        <td>
-        ${cantidad}
-        </td>
-        <td>
-        <a href='#' class='borrar-curso' data-id="${idProducto}"> X </a>
+            <a href='#' class='borrar-curso' data-id="${idProducto}"> X </a>
         </td>
          `
         // agregar HTML del carrito en el tbody
         contenedorCarrito.appendChild(row)
-        e.preventDefault()
     })
 }
 
@@ -164,7 +163,7 @@ function alertaCarrito(message, type) {
     const wrapper = document.createElement('div')
     wrapper.innerHTML = [
         `
-            <div class='alert alert-${type} alert-dismissible position-fixed' role="alert">
+            <div class='alert alert-${type} alert-dismissible translate-middle' role="alert">
                 <div>${message}</div>
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>

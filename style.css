@@ -59,39 +59,52 @@ nav {
     width: 50px;
 }
 
-.carrito {
-    right: 200px;
-}
 
 .img__carrito {
-    width: 250px !important;
+    width: 100px !important;
     height: auto;
 }
 
 .contenedor__carrito {
-    width: 500px;
+    width: auto;
 }
 
-.contenedor__carrito th {
+#lista-carrito>thead>tr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
     width: 100%;
-    padding: 12px 15px;
-    text-align: left;
-
-}
-
-
-td {
-    padding: 10px 30px;
+    height: auto;
+    border-bottom: 1px solid #000;
 }
 
 th:first-child,
 td:first-child {
-    padding-left: 100px;
+    padding-left: 10px;
 }
 
-th:last-child,
-td:last-child {
-    padding-right: 0;
+#producto__title {
+    font-size: small;
+    width: 0px;
+}
+
+tbody>tr {
+    padding: 50px 10px;
+    border-bottom: 1px solid #c5c5c5c4;
+}
+
+tr>th {
+    padding: 0 20px;
+}
+
+tr>td {
+    padding: 0 30px;
+}
+
+.borrar-curso {
+    margin-left: 10px;
 }
 
 .home {
