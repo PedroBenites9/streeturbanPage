@@ -15,9 +15,6 @@ const productoCheckout = document.querySelector('#checkout-producto')
 
 const API_URL = './assets/json/Productos_Indumentaria.json'
 
-
-
-
 fetch(API_URL)
     .then(response => response.json())
     .then(json => {
@@ -31,7 +28,7 @@ fetch(API_URL)
                 <div class='card-body position-relative row row-cols-1  h-100 '>
                     <div class='col'>
                         <h4 class="card__title">${title}</h4>
-                        <p>$${price}</p>
+                        <p>$<span>${price}</span></p>
                         <a class="btn btn-light align-self-end agregar-carrito" data-id="${id}"> Añadir carrito</a>
                     </div
                 </div>
@@ -88,8 +85,9 @@ function leerDatosProducto(producto) {
         idProducto: producto.querySelector('a').getAttribute('data-id'),
         imagen: producto.querySelector('img').src,
         title: producto.querySelector('h4').textContent,
-        precio: producto.querySelector('p').textContent,
-        cantidad: 1
+        precio: parseInt(producto.querySelector('span').textContent),
+        cantidad: 1,
+        total: 0
     }
     const existe = carritoArticulos.some(prod => prod.idProducto === infoProducto.idProducto)
     if (existe) {
@@ -110,8 +108,11 @@ function leerDatosProducto(producto) {
         almarcenarLocalStorage(carritoArticulos)
     }
     // actualiza HMTL carrito
+    let total = infoProducto.cantidad * infoProducto.precio
     carritoHTML()
 }
+
+
 
 
 function carritoHTML() {

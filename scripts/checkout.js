@@ -3,7 +3,10 @@
 let carritoLS = JSON.parse(localStorage.getItem("carrito"))
 const contenedorCheckout = document.querySelector('#home')
 const contenedorProductos = document.querySelector('#contenedor__productos')
+const totalPrecio = document.querySelector('#totalPrecio')
 
+let totalProd = []
+let montoTotal = totalProd.reduce((acc, actual) => acc + actual, 0)
 cargarEventListeners();
 function cargarEventListeners(e) {
     // e.preventDefault()
@@ -16,15 +19,14 @@ function obtenerProductoLS(productos) {
 
 carritoLS.map((producto) => {
     const { idProducto, imagen, title, precio, cantidad } = producto
-    const total = precio * cantidad
-    console.log(cantidad)
     mostrarProductos(idProducto, imagen, title, precio, cantidad)
 })
 
 function mostrarProductos(idProducto, imagen, title, precio, cantidad) {
+    let total = precio * cantidad
+    totalProd.push(total)
+    console.log(totalProd)
     let divCheckout = document.createElement('div')
-
-
     divCheckout.classList.add('card__producto')
     divCheckout.innerHTML = `
             <div class="product" id="checkout-product">
@@ -36,10 +38,22 @@ function mostrarProductos(idProducto, imagen, title, precio, cantidad) {
                 </div>
             </div>
             <div class="total">
-                <h3>Total:$ ${precio * cantidad}</h3>
+                <h3>Total:$ ${total}</h3>
             </div>
-            
             <hr />
     `
     contenedorProductos.appendChild(divCheckout)
+}
+
+
+let totalProductos = totalProd.reduce((acc, actual) => acc + actual, 0)
+mostrarTotal()
+function mostrarTotal() {
+    let divTotal = document.createElement('div')
+    divTotal.innerHTML = `
+        <h3>
+            Monto total: $ ${totalProductos}
+        </h3>
+    `
+    totalPrecio.appendChild(divTotal)
 }

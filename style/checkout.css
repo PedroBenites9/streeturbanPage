@@ -5,6 +5,10 @@
     border: 1px solid #ccc;
 }
 
+main {
+    margin: 50px 100px !important;
+}
+
 .product {
     display: flex;
     align-items: center;
