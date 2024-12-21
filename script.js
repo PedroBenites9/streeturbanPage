@@ -176,10 +176,12 @@ function alertaCarritoVacio() {
     alertaCarrito('El Carrito se encuentra vacio, elige un producto', 'danger')
 }
 
+// direcciona al checkout del carrito
 function comprarProducto() {
     if (!carritoArticulos.length && !localStorage.length) {
-        alertaCarritoVacio()
+        alertaCarritoVacio() //enviar alerta si tanto carrito como localStorage se encuentra vacio
     } else {
+        // direcciona a otro HTML checkout
         window.location.href = './layout/carrito.html'
         vaciarCarrito()
         limpiarHTML()
