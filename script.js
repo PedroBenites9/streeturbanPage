@@ -9,7 +9,9 @@ const comprarProductoBtn = document.querySelector('#iniciar-compra')
 const listaProducto = document.querySelector('#lista-productos')
 const contenedorCard = document.querySelector('.cards')
 
-// variables checkout
+// variables checkout 
+
+const productoCheckout = document.querySelector('#checkout-producto')
 
 const API_URL = './assets/json/Productos_Indumentaria.json'
 
@@ -107,10 +109,10 @@ function leerDatosProducto(producto) {
         carritoArticulos = [...carritoArticulos, infoProducto]
         almarcenarLocalStorage(carritoArticulos)
     }
-
     // actualiza HMTL carrito
     carritoHTML()
 }
+
 
 function carritoHTML() {
     // limpiar HTML
@@ -118,7 +120,6 @@ function carritoHTML() {
     // recorre el carrito y genera HTML
     carritoArticulos.forEach((producto) => {
         const { imagen, title, precio, cantidad, idProducto } = producto
-        console.log(imagen)
         const row = document.createElement('tr')
         row.innerHTML = `
          <td>
@@ -174,7 +175,7 @@ function alertaCarritoVacio() {
 }
 
 function comprarProducto() {
-    if (!carritoArticulos.length) {
+    if (!carritoArticulos.length && !localStorage.length) {
         alertaCarritoVacio()
     } else {
         window.location.href = './layout/carrito.html'
@@ -183,6 +184,4 @@ function comprarProducto() {
 
     }
 }
-
-// script checkout
 
