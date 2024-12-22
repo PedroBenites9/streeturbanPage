@@ -10,7 +10,7 @@ Como novedad se agrego un carrito para que el visitante pueda elegir el producto
 Se implemento carrito con nueva funcionalidad
 1. Carrito
    -Podras visualizar las compras que vas teniendo para luego realizar el checkout. Tambien te va a salir un alerta si es que no introduciste algun producto a carrito
-   ![Previsualizacion carrito](https://1drv.ms/i/s!Apms88ZgUiKhnbMqlGfWyiLl_a6Fqg?e=dzRZCe)
+   ![Previsualizacion carrito](https://1drv.ms/i/s!Apms88ZgUiKhnbMqRNso7Yyt-w9-Sw?e=9LLFh2)
 3. Cards
    -Se agregaron mas productos a la pagina donde vas a tener mas variedad
 
