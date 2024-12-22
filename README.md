@@ -1,9 +1,9 @@
 # Curso: Front-End JS
 
 ## Info general
-En el siguiente proyecto abarcara todo lo aprendido desde la clase 1 hasta el 8
+En el siguiente proyecto abarcara todo lo aprendido desde la clase 1 hasta el 14
 La pagina tiene como objetivo brindar diversos productos de indumentaria. Su funcionamiento es una pagina web estatica, donde se mostrara cards de productos, multimedia y un formulario de suscripcion.
-Como novedad se agrego un carrito para que el visitante pueda elegir el producto de su preferencia y luego pasar a un checkout
+Como novedad se agrego un carrito para que el visitante pueda elegir el producto de su preferencia y para luego pasar a un checkout
 
 ## Novedades
 Se implemento carrito con nueva funcionalidad
