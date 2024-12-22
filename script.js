@@ -25,7 +25,7 @@ fetch(API_URL)
             div_card.innerHTML = ` 
             <div class='col'>
                 <img src=${images[1]} class="card-img-top p-0 w-100" alt="imagenCard" referrerpolicy="no-referrer"/>
-                <div class='card-body position-relative row row-cols-1  h-100 '>
+                <div class='card-body position-relative row row-cols-1'>
                     <div class='col'>
                         <h4 class="card__title">${title}</h4>
                         <p>$<span>${price}</span></p>

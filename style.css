@@ -309,6 +309,8 @@ tr>td {
 
 }
 
+.cards {}
+
 #card {
     display: flex;
     justify-content: center;
@@ -616,7 +618,7 @@ footer {
 @media (min-width:362px) and (max-width: 762px) {
 
     .home {
-        width: 90%;
+        width: 100%;
         margin: 30px 20px;
     }
 
@@ -662,15 +664,12 @@ footer {
     }
 
     .contenedor__card {
-        gap: 20px;
-        width: auto;
-        height: auto;
+        display: flex;
         flex-wrap: wrap;
-
     }
 
-    .card {
-        width: 120px;
+    .cards {
+        width: 420px;
         height: auto;
     }
 
@@ -699,6 +698,13 @@ footer {
     #multimedia__contenedor>iframe {
         width: 350px;
         height: auto;
+    }
+
+    #review {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
     }
 
     #contenedor__review {
