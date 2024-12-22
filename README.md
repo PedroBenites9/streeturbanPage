@@ -15,4 +15,4 @@ Se implemento carrito con nueva funcionalidad
    -Se agregaron mas productos a la pagina donde vas a tener mas variedad
 
 >[!IMPORTANT]
-> Por cuestiones de problemas de permismos dentro de carrito no se va a poder ver las imagenes como previsualizado, ni en checkout. Esto se debe a que el banco de imagenes necesita un permiso para que, de forma global, se pueda ver las imagenes a todo publico
+> Por cuestiones de problemas de permismos dentro de carrito no se va a poder ver las imagenes como previsualizado, ni en checkout. Esto se debe a que el banco de imagenes necesita un permiso para que, de forma global, se pueda ver las imagenes a todo publico. Caso contrario, ignore este aviso
